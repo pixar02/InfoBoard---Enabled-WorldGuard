@@ -86,7 +86,7 @@ public class InfoBoard extends JavaPlugin implements Listener {
         }
 //GTN added dependency required for Location to Vector conversion
         if (!Bukkit.getPluginManager().isPluginEnabled("WorldEdit")) {
-            throw new RuntimeException("Could not find Vault!! Plugin can not work without it!");
+            throw new RuntimeException("Could not find WorldEdit!! Plugin can not work without it!");
         }
         InfoBoard.instance = this;
         InfoBoard.fileManager = new FileManager();
